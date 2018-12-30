@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>一封来自社团联合会的邀请函</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--<base href="https://q5tech.iifly.cn/yyh2017/" />-->
+    <link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="keywords">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+    <!--
+    <div class="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    -->
+    <!--<video id="first-video" src="assets/video/one.mp4" width="100%" webkit-playsinline playsinline></video>
+    <div id="fucking-video" style="height:100%"></div>-->
+    <div id="container">
+        <img src="assets/image/music-off.png" class="music-btn">
+        <div id="wrap">
+            <div class="page page0" style="background-image: url(assets/image/pages/0/bg.jpg)">
+                <div class="loading">
+                    <div class="spinner">
+                        <div class="rect1"></div>
+                        <div class="rect2" style="display:none"></div>
+                        <div class="rect3" style="display:none"></div>
+                        <div class="rect4" style="display:none"></div>
+                        <div class="rect5" style="display:none"></div>
+                    </div>
+                </div>
+                <img id="img_0_1" src="assets/image/pages/0/1.png" class="hide animated center-block p1 fir-img" style="padding-top:1rem;width:80%">
+                <img id="img_0_2" src="assets/image/pages/0/2.png" class="hide animated center-block p2 fir-img" style="padding-top:0rem;width:40%">
+                <img id="img_0_3" src="assets/image/pages/0/3.png" class="hide animated center-block p3 fir-img" style="padding-top:0rem;width:80%">
+                <img id="start" src="assets/image/pages/0/4.png" class="hide animated center-block p4 fir-img" style="padding-top:0rem">
+                <img id="img_0_5" src="assets/image/pages/0/5.png" class="hide animated center-block p5 fir-imgq" style="padding-top:0px;width:50%">
+            </div>
+            <div class="page page1" style="background-image: url(assets/image/pages/1/bg.jpg)">
+                <img src="assets/image/pages/1/1.png" class="hide animated center-block p1" style="padding-top:1rem">
+                <img src="assets/image/pages/1/2.png" class="hide animated center-block p2" style="padding-top:0px">
+                <img src="assets/image/pages/1/3.png" class="hide animated center-block p3" style="padding-top:1rem">
+                <b></b>
+            </div>
+            <div class="page page2" style="background-image: url(assets/image/pages/2/bg.jpg)">
+                <img src="assets/image/pages/2/1.png" class="hide animated center-block p1" style="padding-top:8rem">
+                <img src="assets/image/pages/2/2.png" class="hide animated center-block p2" style="padding-top:9rem">
+                <b></b>
+            </div>
+            <div class="page page3" style="background-image: url(assets/image/pages/3/bg.jpg)">
+                <img src="assets/image/pages/3/1.png" class="hide animated center-block p1" style="padding-top:5rem">
+                <img src="assets/image/pages/3/2.png" class="hide animated center-block p2" style="padding-top:2rem">
+                <img src="assets/image/pages/3/3.png" class="hide animated center-block p3" style="padding-top:4rem">
+                <b class="black-b"></b>
+            </div>
+            <div class="page page4" style="background-image: url(assets/image/pages/4/bg.jpg)">
+                <img src="assets/image/pages/4/1.png" id="show-map" class="hide animated center-block p1" style="padding-top:10rem">
+                <img src="assets/image/pages/4/2.png" id="show-map2" class="hide animated center-block p2" style="padding-top:2rem">
+                <b></b>
+            </div>
+            <div class="page page5" style="background-image: url(assets/image/pages/5/bg.jpg)">
+                <!-- 偷懒！！！ -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Modal -->
+    <div class="modal fade" id="map-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        战区地图
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    Tips: 地图是可以划动的
+                    <div id="map-div" style="overflow:scroll;max-height:350px;">
+                        <img src="assets/image/map-small.jpg?v=2" style="width:650px;height:919px;min-width:650px;">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!-- Map2 Modal -->
+    <div class="modal fade" id="map2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        战队信息
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    Tips: 点击战队名称查看
+                    <div id="map2-div" style="overflow:scroll;max-height:350px;">
+
+                        <img src="assets/image/map2.jpg" width="1072" height="2956" usemap='#map' alt='' />
+                        <map name='map' id='map'>
+                            <area shape='rect' coords='58,212,204,290' stid='48' />
+                            <area shape='rect' coords='210,214,354,289' stid='' />
+                            <area shape='rect' coords='358,216,501,291' stid='0' />
+                            <area shape='rect' coords='555,213,696,289' stid='111' />
+                            <area shape='rect' coords='703,212,845,290' stid='82' />
+                            <area shape='rect' coords='853,213,995,290' stid='' />
+                            <area shape='rect' coords='851,310,994,382' stid='32' />
+                            <area shape='rect' coords='851,403,997,481' stid='138' />
+                            <area shape='rect' coords='851,499,997,575' stid='198' />
+                            <area shape='rect' coords='850,597,997,675' stid='164' />
+                            <area shape='rect' coords='850,691,998,770' stid='65' />
+                            <area shape='rect' coords='850,788,996,865' stid='123' />
+                            <area shape='rect' coords='850,882,996,962' stid='160' />
+                            <area shape='rect' coords='850,977,997,1056' stid='147' />
+                            <area shape='rect' coords='850,1072,997,1152' stid='' />
+                            <area shape='rect' coords='850,1168,998,1247' stid='184' />
+                            <area shape='rect' coords='850,1263,996,1342' stid='40' />
+                            <area shape='rect' coords='849,1361,996,1436' stid='180' />
+                            <area shape='rect' coords='723,1360,846,1436' stid='270' />
+                            <area shape='rect' coords='595,1361,718,1435' stid='129' />
+                            <area shape='rect' coords='464,1361,591,1437' stid='276' />
+                            <area shape='rect' coords='336,1362,463,1439' stid='202' />
+                            <area shape='rect' coords='206,1363,334,1438' stid='' />
+                            <area shape='rect' coords='58,1359,202,1438' stid='76' />
+                            <area shape='rect' coords='58,1264,202,1340' stid='233' />
+                            <area shape='rect' coords='58,1170,203,1248' stid='104' />
+                            <area shape='rect' coords='58,1073,204,1151' stid='' />
+                            <area shape='rect' coords='58,978,200,1054' stid='134' />
+                            <area shape='rect' coords='59,883,206,959' stid='154' />
+                            <area shape='rect' coords='58,787,204,868' stid='70' />
+                            <area shape='rect' coords='58,691,204,771' stid='142' />
+                            <area shape='rect' coords='57,596,205,674' stid='212' />
+                            <area shape='rect' coords='58,497,206,578' stid='173' />
+                            <area shape='rect' coords='59,402,207,482' stid='150' />
+                            <area shape='rect' coords='59,309,204,385' stid='189' />
+                            <area shape='rect' coords='298,1774,446,1855' stid='193' />
+                            <area shape='rect' coords='451,1775,597,1852' stid='86' />
+                            <area shape='rect' coords='606,1775,751,1853' stid='57' />
+                            <area shape='rect' coords='759,1776,905,1852' stid='120' />
+                            <area shape='rect' coords='301,1960,445,2037' stid='274' />
+                            <area shape='rect' coords='454,1961,599,2038' stid='60' />
+                            <area shape='rect' coords='607,1960,752,2038' stid='205' />
+                            <area shape='rect' coords='760,1959,903,2037' stid='' />
+                            <area shape='rect' coords='370,2392,800,2567' stid='' />
+                        </map>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!-- Introduction Modal -->
+    <div class="modal fade" id="incro-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="stName">
+
+                    </h4>
+                </div>
+                <div class="modal-body" id="stContent">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <audio id="bgm" src="assets/audio/bgm.mp3" style="display:none" loop preload></audio>
+    <!--play by js-->
+
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/js/min.slip.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script>
+    var loded = 0;
+
+    function loaded() {
+
+        setTimeout(function () {
+            $('.loading').fadeOut();
+            welcome();
+        }, 2000)
+
+    }
+
+    /*loading*/
+    var imgdefereds = $('.fir-img');
+    $('.fir-img').each(function () {
+        var dfd = $.Deferred();
+        $(this).bind('load', function () {
+            dfd.resolve();
+        }).bind('error', function () {
+            //图片加载错误，加入错误处理
+            // dfd.resolve();
+        })
+        if (this.complete) setTimeout(function () {
+            dfd.resolve();
+        }, 1000);
+        imgdefereds.push(dfd);
+    })
+    $.when.apply(null, imgdefereds).done(function () {
+        loaded();
+    });
+
+    setTimeout(function () {
+        $('.rect2').fadeIn();
+    }, 2000);
+    setTimeout(function () {
+        $('.rect3').fadeIn();
+    }, 4000);
+    setTimeout(function () {
+        $('.rect4').fadeIn();
+    }, 6000);
+    setTimeout(function () {
+        $('.rect5').fadeIn();
+    }, 8000);
+    setTimeout(function () {
+        loaded();
+    }, 10000);
+</script>
+
+
+<!--<script>function getSize(){var e=oHtml.offsetWidth;oHtml.style.fontSize=e>=uiWidth?font+"px":e<=320?320/bili+"px":e/bili+"px"}window.tempPageLoadStartTime=(new Date).getTime();var oHtml=document.documentElement,uiWidth=450,font=40,bili=uiWidth/font,getSizeTime=null;getSize(),window.addEventListener("resize",function(){clearTimeout(getSizeTime),getSizeTime=setTimeout(function(){getSize()},300)})</script>-->
+<!--ga-->
+
+</html>
